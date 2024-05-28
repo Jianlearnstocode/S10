@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A/B Testing Example</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Welcome to our Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5G2RVCDG");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A/B Testing Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5G2RVCDG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <h1>Welcome to our Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="static-section">
-      <h2>Static Section</h2>
-      <p>This is a static section of our website.</p>
-    </section>
+    <main>
+      <section class="static-section">
+        <h2>Static Section</h2>
+        <p>This is a static section of our website.</p>
+      </section>
 
-    <section class="dynamic-section">
-      <h2>Dynamic Section (A/B Test)</h2>
-      <div id="ab-test-container"></div>
-    </section>
+      <section class="dynamic-section">
+        <h2>Dynamic Section (A/B Test)</h2>
+        <div id="ab-test-container"></div>
+      </section>
 
-    <section class="cta-section">
-      <h2>Call to Action</h2>
-      <button id="cta-button">Click me</button>
-    </section>
-  </main>
+      <section class="cta-section">
+        <h2>Call to Action</h2>
+        <button id="cta-button">Click me</button>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2024 Jian's A/B Testing</p>
-  </footer>
+    <footer>
+      <p>&copy; 2024 Jian's A/B Testing</p>
+    </footer>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
