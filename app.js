@@ -14,13 +14,13 @@ function renderVariant(variant) {
     abTestContainer.innerHTML = `
       <h3>Variant A</h3>
       <p>This is the content for Variant A.</p>
-      <button id='ab-button-a' class="cta-button" data-variant="A">Click me (A)</button>
+      <button id='ab_button_a' class="cta-button" data-variant="A">Click me (A)</button>
     `;
   } else {
     abTestContainer.innerHTML = `
       <h3>Variant B</h3>
       <p>This is the content for Variant B.</p>
-      <button id='ab-button-b' class="cta-button" data-variant="B">Click me (B)</button>
+      <button id='ab_button_b' class="cta-button" data-variant="B">Click me (B)</button>
     `;
   }
   assignEventListeners();
